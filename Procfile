@@ -1,1 +1,1 @@
-worker: python3.8 search_bot.py
+worker: python search_bot.py
