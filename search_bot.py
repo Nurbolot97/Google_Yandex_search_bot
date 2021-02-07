@@ -10,6 +10,7 @@ from klaviatura import start_nastroenie_klaviatura
 from klaviatura import glavnoe_okno
 
 
+
 bot = telebot.TeleBot(config('TOKEN'))
 driver = webdriver.Firefox()
 
@@ -84,8 +85,11 @@ def poisk_google(message):
             
     def get_write_google():
         with open('google.txt', 'w') as f:
-            for index in otvety_google[35:50:]:
-                f.write('#))' + index + '\n')
+            try:
+                for index in otvety_google[35:50:]:
+                    f.write('#))' + index + '\n')
+            except:
+                bot.send_message(chat_id, "Убедитесь в правильности ввода!")
     get_write_google()
     f = open('google.txt') 
     bot.send_message(chat_id, f"{f.read()}\n")
@@ -107,8 +111,11 @@ def poisk_yandex(message):
 
     def get_write_yandex():
         with open('yandex.txt', 'w') as f:
-            for index in otvety_yandex[35:50:]:
-                f.write('#))' + index + '\n')
+            try:
+                for index in otvety_yandex[35:50:]:
+                    f.write('#))' + index + '\n')
+            except:
+                bot.send_message(chat_id, "Убедитесь в правильности ввода!")
     get_write_yandex()
     f = open('yandex.txt') 
     bot.send_message(chat_id, f"{f.read()}\n")
@@ -123,9 +130,12 @@ def poisk_youtube(message):
     sleep(2)
     ssylki2 = driver.find_elements_by_id('video-title')
     for i in range(len(ssylki2)):
-        bot.send_message(chat_id, f"{ssylki2[i].get_attribute('href')}")
-        if i == 10:
-            break
+        try:
+            bot.send_message(chat_id, f"{ssylki2[i].get_attribute('href')}")
+            if i == 10:
+                break
+        except:
+            bot.send_message(chat_id, "Убедитесь в правильности ввода!")
     bot.send_message(chat_id, "Надеюсь эти видео Вам помогут \U0001F609")
     bot.send_message(chat_id, "Для продолжения нажмите /next")
 

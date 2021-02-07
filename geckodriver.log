@@ -1011,3 +1011,33 @@ Exiting due to channel error.
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
 Exiting due to channel error.
 Exiting due to channel error.
+1612730666614	geckodriver	INFO	Listening on 127.0.0.1:44965
+1612730667604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0fJ26G"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612730690980	Marionette	INFO	Listening on port 28589
+1612730691339	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612730691386	Marionette	ERROR	[18] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612730941647	geckodriver	INFO	Listening on 127.0.0.1:30649
+1612730941660	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileidzuJO"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612730956949	Marionette	INFO	Listening on port 29013
+1612730957324	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612730957499	Marionette	ERROR	[15] No reply from Marionette:Register
+1612731174627	geckodriver	INFO	Listening on 127.0.0.1:60733
+1612731174644	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJ67udW"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612731184536	Marionette	INFO	Listening on port 32507
+1612731184877	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612731184983	Marionette	ERROR	[15] No reply from Marionette:Register
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612731196635	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1612731327559	geckodriver	INFO	Listening on 127.0.0.1:16509
+1612731328571	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDcvD2s"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1612731341128	Marionette	INFO	Listening on port 11843
+1612731341270	Marionette	WARN	TLS certificate errors will be ignored for this session
+1612731341361	Marionette	ERROR	[15] No reply from Marionette:Register
+1612731352426	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
